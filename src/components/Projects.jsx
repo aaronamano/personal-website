@@ -2,24 +2,24 @@ import { projects } from '../data/projects';
 
 export default function Projects() {
     return (
-        <div className="projects-grid flex flex-wrap gap-8 justify-start items-stretch pr-2 overflow-y-auto max-h-162.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {projects.map((project, index) => (
                 <a 
                     key={index} 
-                    href={project.link} 
-                    className="text-decoration-none"
+                    href={project.link}
+                    className="block group"
                 >
-                    <div className="bg-tertiary rounded-xl shadow-xl overflow-hidden w-72.5 flex flex-col transition duration-200 h-75 hover:translate-y-1.5 hover:scale-105 hover:shadow-2xl border border-custom">
-                        <div className="relative">
+                    <div className="bg-secondary dark:bg-tertiary rounded-xl overflow-hidden transition duration-200 hover:shadow-lg border border-gray-200 dark:border-gray-800 h-80 flex flex-col">
+                        <div className="relative h-36 shrink-0">
                             <img 
                                 src={project.image} 
                                 alt="" 
-                                className="w-full h-36 object-cover bg-secondary block" 
+                                className="w-full h-full object-cover" 
                             />
                         </div>
-                        <div className="p-5 flex-1 flex flex-col overflow-y-auto">
-                            <h3 className="mt-0 mb-3 text-primary text-xl">{project.name}</h3>
-                            <p className="text-secondary text-base m-0 flex-1">
+                        <div className="p-5 overflow-y-auto flex-1">
+                            <h3 className="text-lg font-medium text-primary group-hover:text-secondary transition-colors">{project.name}</h3>
+                            <p className="text-secondary text-sm mt-2">
                                 {project.description}
                             </p>
                         </div>

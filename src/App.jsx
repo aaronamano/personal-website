@@ -45,13 +45,15 @@ function App() {
   return (
     <>
       <ThemeToggle />
-      <main className="max-w-4xl mx-auto my-4 px-4">
-        <div className="flex justify-center mb-4 gap-2 max-sm:gap-0">
+      <main className="max-w-3xl mx-auto py-12 px-6">
+        <div className="flex justify-center mb-12 gap-8 max-sm:gap-4">
           {tabs.map((tab) => (
             <button
               key={tab.id}
-              className={`tab-button text-center py-2 px-4 text-base font-bold text-secondary transition duration-300 ease-in-out hover:text-primary max-sm:py-2 max-sm:px-2 max-sm:text-xs ${
-                activeTab === tab.id ? 'text-primary border-b-2 border-primary' : 'border-b-2 border-transparent'
+              className={`text-sm uppercase tracking-widest transition duration-200 ${
+                activeTab === tab.id 
+                  ? 'text-primary font-medium border-b-2 border-black dark:border-white' 
+                  : 'text-tertiary hover:text-secondary border-b-2 border-transparent'
               }`}
               onClick={() => setActiveTab(tab.id)}
             >
@@ -59,7 +61,7 @@ function App() {
             </button>
           ))}
         </div>
-        <div className="bg-secondary p-4 rounded-lg shadow-xl h-200 border border-custom">
+        <div className="min-h-96">
           {renderContent()}
         </div>
       </main>

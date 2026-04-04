@@ -13,7 +13,7 @@ const createColoredIcon = (color) => L.icon({
   popupAnchor: [0, -44],
 });
 
-const getIconForYear = (year) => {
+  const getIconForYear = (year) => {
   const colors = {
     '2024': '#3B82F6',
     '2025': '#EF4444',
@@ -209,27 +209,28 @@ export default function TravelMap() {
   };
 
   return (
-    <div className="h-full flex flex-col">
-      <h2 className="text-2xl font-bold text-primary mb-4 text-center">Travel Logs</h2>
-      <p className="text-primary/70 mb-4 text-center">Besides focusing on CS, I enjoy traveling a lot out of Michigan and explore new things. Click on a pinpoint to view my photo dump of a particular location.</p>
+    <div className="flex flex-col">
+      <h2 className="text-2xl font-light text-primary mb-2 text-center tracking-tight">Travel Logs</h2>
+      <p className="text-secondary mb-4 text-center text-sm max-w-lg mx-auto">Besides focusing on CS, I enjoy traveling outside of Michigan and exploring new places. Click on a pinpoint to view photos from each location.</p>
       
-      <div className="flex gap-4 justify-center mb-4">
-        <span className="flex items-center gap-2 text-sm text-primary">
-          <span className="w-3 h-3 rounded-full bg-[#3B82F6]"></span> 2024
+      <div className="flex gap-6 justify-center mb-4">
+        <span className="flex items-center gap-2 text-sm text-secondary">
+          <span className="w-2.5 h-2.5 rounded-full bg-blue-500"></span> 2024
         </span>
-        <span className="flex items-center gap-2 text-sm text-primary">
-          <span className="w-3 h-3 rounded-full bg-[#EF4444]"></span> 2025
+        <span className="flex items-center gap-2 text-sm text-secondary">
+          <span className="w-2.5 h-2.5 rounded-full bg-red-500"></span> 2025
         </span>
-        <span className="flex items-center gap-2 text-sm text-primary">
-          <span className="w-3 h-3 rounded-full bg-[#10B981]"></span> 2026
+        <span className="flex items-center gap-2 text-sm text-secondary">
+          <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> 2026
         </span>
       </div>
       
-      <div className="flex-1 min-h-100 rounded-lg overflow-hidden border border-custom">
+      <div className="flex-1 min-h-96 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800">
         <MapContainer 
           center={[39.8283, -98.5795]} 
           zoom={4} 
-          style={{ height: '100%', width: '100%' }}
+          style={{ height: '500px', width: '100%' }}
+          className="dark:brightness-90 dark:invert dark:hue-rotate-180"
         >
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
