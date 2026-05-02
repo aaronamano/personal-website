@@ -2,16 +2,12 @@ import { useState } from 'react';
 import ThemeToggle from './components/ThemeToggle';
 import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
-import Projects from './components/Projects';
-import TravelMap from './components/TravelMap';
-import Resume from './components/Resume';
+import Blogs from './components/Blogs';
 
 const TABS = {
   ABOUTME: 'aboutme',
   EXPERIENCE: 'experience',
-  PROJECTS: 'projects',
-  TRAVEL: 'travel',
-  RESUME: 'resume'
+  BLOGS: 'blogs'
 };
 
 function App() {
@@ -20,9 +16,7 @@ function App() {
   const tabs = [
     { id: TABS.ABOUTME, label: 'me' },
     { id: TABS.EXPERIENCE, label: 'xp' },
-    { id: TABS.PROJECTS, label: 'builds' },
-    { id: TABS.TRAVEL, label: 'side quests' },
-    { id: TABS.RESUME, label: 'resume' }
+    { id: TABS.BLOGS, label: 'blogs' }
   ];
 
   const renderContent = () => {
@@ -31,12 +25,8 @@ function App() {
         return <AboutMe />;
       case TABS.EXPERIENCE:
         return <Experience />;
-      case TABS.PROJECTS:
-        return <Projects />;
-      case TABS.TRAVEL:
-        return <TravelMap />;
-      case TABS.RESUME:
-        return <Resume />;
+      case TABS.BLOGS:
+        return <Blogs />;
       default:
         return <AboutMe />;
     }

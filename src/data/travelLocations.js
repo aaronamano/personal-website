@@ -1,1 +1,0 @@
-export { travelLocations } from './travel';
