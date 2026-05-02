@@ -1,6 +1,6 @@
 export default function Blogs() {
 
-  const BASEURL = "public/data/blogs"
+  const BASEURL = "/data/blogs"
 
   return (
     <div>
