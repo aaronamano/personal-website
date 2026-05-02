@@ -1,25 +1,33 @@
 export const experience = [
   {
+    title: "Technical Lead",
+    organization: "Google Developer Groups",
+    dateRange: "September 2026 — Present",
+    location: "Dearborn, MI",
+    description: `TBD`
+  },
+  {
     title: "Software Developer",
     organization: "Hack Dearborn",
     dateRange: "May 2026 — Present",
     location: "Dearborn, MI",
-    description: `Currently co-leading a team of developers to build the website and mobile registration app for Hack Dearborn 5`
+    description: `Collaborating with a core cross-functional team and co-leading a team of developers to build the website and mobile registration app for Hack Dearborn 5`
   },
   {
     title: "Software Developer",
     organization: "Filipino Americans in Tech",
     dateRange: "Dec 2025 — Present",
     location: "Remote",
-    description: `Developing multiple Discord workers to extract and post news for a 270+ member community`
+    description: `Developing multiple Discord workers to scrape and post news from various sources for a 270+ member community: Rappler news bot, YC news opt-in/out feature bot`
   },
   {
     title: "Technical Lead",
     organization: "Google Developer Groups",
-    dateRange: "Nov 2025 — Present",
+    dateRange: "Nov 2025 — April 2026",
     location: "Dearborn, MI",
     description:
-      `Collaborating with board members to plan workshops for events in order for me to create and host them. Conducting Neetcode sessions and recordings where I walk through solving coding problems to help users be more proficient in data structures and algorithms for interviews`
+      `Planned and led multiple workshops for 40+ attendees in total: Intro to Next.js and MongoDB; Intro to backend dev concepts (RESTful, Express.js, Firebase, Google Gemini API); Web-based Easter scavenger hunt for Winter 2026 GBM (React, FastAPI, Vercel); Opencode and Agent Skills demo.
+      Led weekly sessions on walking through coding interview problems, helping attendees gain proficiency in data structures, algorithms, and object-oriented programing`
   },
   {
     title: "Web Developer",

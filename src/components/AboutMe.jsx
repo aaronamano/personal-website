@@ -1,5 +1,3 @@
-import { socials } from '../data/socials';
-
 export default function AboutMe() {
     return (
         <div className="flex flex-col items-center justify-center">
@@ -14,23 +12,13 @@ export default function AboutMe() {
                     className="w-48 h-48 object-cover rounded-2xl block mx-auto"
                 />
                 <div className="text-center">
-                    <div className="gap-4 mb-6">
-                        <p className="text-secondary text-sm">email: amanoac [at] umich [dot] edu</p>
-                        <p className="text-tertiary text-sm">phone: +1 (586) 522-7807</p>
-                    </div>
-                    <div className="flex justify-center gap-8">
-                        {socials.map((social) => (
-                            <a key={social.name} href={social.url} className="text-tertiary hover:text-primary transition-colors duration-200">
-                                <i 
-                                    className={`${social.icon} text-2xl`} 
-                                    aria-hidden="true"
-                                ></i>
-                            </a>
-                        ))}
-                    </div>
+                    <p className="text-secondary text-sm">email: amanoac@umich.edu</p>
+                    <p className="text-secondary text-sm">github: <a href="https://github.com/aaronamano" className='text-blue-700'>github.com/aaronamano</a></p>
+                    <p className="text-secondary text-sm">twitter: <a href="https://x.com/aaronamano" className='text-blue-700'>x.com/aaronamano</a></p>
+                    <p className="text-secondary text-sm">linkedin: <a href="https://linkedin.com/in/aaronamano" className='text-blue-700'>linkedin.com/in/aaronamano</a></p>
                 </div>
                 <footer className="text-center text-tertiary text-sm italic max-w-md">
-                    "You just keep your head down, you just keep working and working away. It's just—you know, you just don't give up. You keep going, you keep pushing."  
+                    "You just keep your head down, you just keep working and working away. It's just—you know, you just don't give up. You keep going, you keep pushing."
                     — Lewis Hamilton
                 </footer>
             </div>
