@@ -10,6 +10,9 @@ export default function Blogs() {
       <p className="mt-6">May 3, 2026</p>
       <a href={`${BASEURL}/blog2.html`} target="_blank" rel="noopener noreferrer" className="text-blue-700 text-xl">How watching Bluelock changed me</a>
 
+      <p className="mt-6">May 8, 2026</p>
+      <a href={`${BASEURL}/blog3.html`} target="_blank" rel="noopener noreferrer" className="text-blue-700 text-xl">Navigating through noise</a>
+
     </>
   );
 }
