@@ -12,7 +12,7 @@ export default function AboutMe() {
                     className="w-48 h-48 object-cover rounded-2xl block mx-auto"
                 />
                 <div className="text-center">
-                    <p className="text-secondary text-sm">email: amanoac@umich.edu</p>
+                    <p className="text-secondary text-sm">email: amanoac@umich.edu | aaroncedric2005@gmail.com</p>
                     <p className="text-secondary text-sm">github: <a href="https://github.com/aaronamano" className='text-blue-700'>github.com/aaronamano</a></p>
                     <p className="text-secondary text-sm">twitter: <a href="https://x.com/aaronamano" className='text-blue-700'>x.com/aaronamano</a></p>
                     <p className="text-secondary text-sm">linkedin: <a href="https://linkedin.com/in/aaronamano" className='text-blue-700'>linkedin.com/in/aaronamano</a></p>
