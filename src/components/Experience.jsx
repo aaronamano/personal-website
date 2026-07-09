@@ -8,14 +8,14 @@ export default function Experience() {
                     <div className="flex justify-between items-start mb-2 max-sm:flex-col max-sm:items-start max-sm:gap-1">
                         <div>
                             <h3 className="text-lg font-medium text-primary">{item.title}</h3>
-                            <h4 className="text-base text-secondary">{item.organization}</h4>
+                            <h4 className="text-base text-secondary italic">{item.organization}</h4>
                         </div>
                         <div className="flex flex-col items-end gap-0.5 max-sm:flex-row max-sm:items-start max-sm:gap-4">
                             <span className="text-sm text-tertiary">
                                 {item.dateRange}
                             </span>
                             {item.location && (
-                                <span className="text-sm text-tertiary">
+                                <span className="text-sm text-tertiary italic">
                                     {item.location}
                                 </span>
                             )}
