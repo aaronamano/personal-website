@@ -15,11 +15,11 @@ export default function Blogs() {
       <p className="mt-6">May 8, 2026</p>
       <a href={`${BASEURL}/blog3.html`} target="_blank" rel="noopener noreferrer" className="text-blue-700 text-xl">Navigating through noise</a>
 
-      <p className="mt-6">May 14, 2026</p>
-      <a href={`${BASEURL}/blog4.html`} target="_blank" rel="noopener noreferrer" className="text-blue-700 text-xl">Fullstack dev is boring</a>
-
       <p className="mt-6">May 21, 2026</p>
-      <a href={`${BASEURL}/blog5.html`} target="_blank" rel="noopener noreferrer" className="text-blue-700 text-xl">College isn't useless</a>
+      <a href={`${BASEURL}/blog4.html`} target="_blank" rel="noopener noreferrer" className="text-blue-700 text-xl">College isn't useless</a>
+
+      <p className="mt-6">Jul 14, 2026</p>
+      <a href={`${BASEURL}/blog5.html`} target="_blank" rel="noopener noreferrer" className="text-blue-700 text-xl">Learning about web performance and optimization</a>
 
     </>
   );
