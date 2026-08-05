@@ -2,12 +2,12 @@ import { useState } from 'react';
 import ThemeToggle from './components/ThemeToggle';
 import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
-import Blogs from './components/Blogs';
+import Piano from './components/Piano';
 
 const TABS = {
   ABOUTME: 'aboutme',
   EXPERIENCE: 'experience',
-  BLOGS: 'blogs'
+  PIANO: 'piano'
 };
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
   const tabs = [
     { id: TABS.ABOUTME, label: 'me' },
     { id: TABS.EXPERIENCE, label: 'xp' },
-    { id: TABS.BLOGS, label: 'blogs' }
+    { id: TABS.PIANO, label: 'piano' }
   ];
 
   const renderContent = () => {
@@ -25,8 +25,8 @@ function App() {
         return <AboutMe />;
       case TABS.EXPERIENCE:
         return <Experience />;
-      case TABS.BLOGS:
-        return <Blogs />;
+      case TABS.PIANO:
+        return <Piano />;
       default:
         return <AboutMe />;
     }
