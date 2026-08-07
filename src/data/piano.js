@@ -1,6 +1,6 @@
 export const pianoVideos = [
   {
-    title: "Rachmaninoff - Prelude in C# minor, Op. 3 No. 2",
+    title: "Rachmaninoff - Prelude in C-sharp minor, Op. 3 No. 2",
     url: "https://youtu.be/G9W_8tKfL8U?si=A5RAX6qVfWqXU6QO",
     year: "2023",
   },
@@ -24,4 +24,30 @@ export const pianoVideos = [
     url: "https://youtu.be/LdD9O40RnYc?si=toaoY2RpGAyd3q3e",
     year: "2020"
   },
+  {
+    title: "Beethoven - Sonata in G major, Op. 49 No.2 Mvt. 1",
+    url: "https://drive.google.com/file/d/1xS7cWAz57IhAMAPZEfVXeoSmLLq5OboB/view?usp=drive_link",
+    year: "2019"
+  },
+  {
+    title: "Chopin - Nocturne in E-flat major, Op. 9 No.2",
+    url: "https://drive.google.com/file/d/1zEY6vN5a-Ii_R4K-UGzG17GCI5aCWub9/view?usp=drive_link",
+    year: "2019"
+  },
+  {
+    title: "Chopin - Waltz in C-sharp minor, Op. 69 No. 2",
+    url: "https://drive.google.com/file/d/1Ck78A2jT1lbBFJtXvsrh7a5mSb5ReXQ5/view?usp=drive_link",
+    year: "2024"
+  },
+  {
+    title: "Rachmaninoff - Elegie in E-flat minor, Op. 3 No. 1",
+    url: "https://drive.google.com/file/d/1y7HWxYnZDXA-snFB_4_vfGeQS_YYOraT/view?usp=drive_link",
+    year: "2024"
+  },
+  {
+    title: "Debussy - Le Petit Negre, L. 114 CD 122",
+    url: "https://drive.google.com/file/d/10BRpLxDiaWX3gshU1ttpvVHtEI7dFNum/view?usp=drive_link",
+    year: "2017"
+  }
+
 ];
