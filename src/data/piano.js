@@ -25,7 +25,7 @@ export const pianoVideos = [
     year: "2020"
   },
   {
-    title: "Beethoven - Sonata in G major, Op. 49 No.2 Mvt. 1",
+    title: "Beethoven - Sonata in G major, Op. 49 No. 2 Mvt. 1",
     url: "https://drive.google.com/file/d/1xS7cWAz57IhAMAPZEfVXeoSmLLq5OboB/view?usp=drive_link",
     year: "2019"
   },
@@ -48,6 +48,11 @@ export const pianoVideos = [
     title: "Debussy - Le Petit Negre, L. 114 CD 122",
     url: "https://drive.google.com/file/d/10BRpLxDiaWX3gshU1ttpvVHtEI7dFNum/view?usp=drive_link",
     year: "2017"
+  },
+  {
+    title: "Beethoven - Sonata in C minor, Op. 10 No. 1 Mvt. 1",
+    url: "https://drive.google.com/file/d/14Rt8kLo02zz4cb2gtX9yBIs72KXcmPWe/view?usp=sharing",
+    year: "2021"
   }
 
 ];
