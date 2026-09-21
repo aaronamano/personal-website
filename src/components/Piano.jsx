@@ -3,11 +3,11 @@ import { pianoVideos } from '../data/piano';
 export default function Piano() {
   return (
     <>
-      <p className="mb-4"><b>Fun fact</b>: I've played piano for 8+ years. Here you can listen to my recordings by clicking on a title. You won't get rick-rolled.</p>
+      <p className="mb-4"><b>Fun fact</b>: I've played piano for 8+ years. Here you can listen to my recordings by clicking on a title.</p>
       <div className="space-y-4">
         {[...pianoVideos].sort((a, b) => b.year - a.year).map((video, index) => (
           <div key={index}>
-            <a href={video.url} target="_blank" rel="noopener noreferrer" className="text-blue-700 text-xl">{video.title}</a>
+            <a href={video.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 text-xl hover:underline underline-offset-4">{video.title}</a>
             {video.year && <span className="text-sm text-tertiary ml-2">({video.year})</span>}
           </div>
         ))}

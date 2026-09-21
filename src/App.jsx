@@ -3,11 +3,13 @@ import ThemeToggle from './components/ThemeToggle';
 import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
 import Piano from './components/Piano';
+import Workshops from './components/Workshops';
 
 const TABS = {
   ABOUTME: 'aboutme',
   EXPERIENCE: 'experience',
-  PIANO: 'piano'
+  PIANO: 'piano',
+  WORKSHOPS: 'workshops'
 };
 
 function App() {
@@ -16,7 +18,8 @@ function App() {
   const tabs = [
     { id: TABS.ABOUTME, label: 'me' },
     { id: TABS.EXPERIENCE, label: 'xp' },
-    { id: TABS.PIANO, label: 'piano' }
+    { id: TABS.PIANO, label: 'piano' },
+    { id: TABS.WORKSHOPS, label: 'Workshops' }
   ];
 
   const renderContent = () => {
@@ -27,6 +30,8 @@ function App() {
         return <Experience />;
       case TABS.PIANO:
         return <Piano />;
+      case TABS.WORKSHOPS:
+        return <Workshops />;
       default:
         return <AboutMe />;
     }
@@ -35,8 +40,8 @@ function App() {
   return (
     <>
       <ThemeToggle />
-      <main className="max-w-3xl mx-auto py-12 px-6">
-        <div className="flex justify-center mb-12 gap-8 max-sm:gap-4">
+      <main className="max-w-6xl mx-auto py-12 px-4 sm:px-6">
+        <div className="flex flex-wrap justify-center mb-12 gap-8 max-sm:gap-4">
           {tabs.map((tab) => (
             <button
               key={tab.id}
