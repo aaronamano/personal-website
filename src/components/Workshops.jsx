@@ -51,18 +51,18 @@ export default function Workshops() {
                 {workshop.description}
               </p>
               {previewUrl ? (
-                <div className="mb-3 overflow-hidden rounded-xl border border-custom bg-secondary">
+                <>
                   <iframe
                     src={previewUrl}
                     title={`${workshop.title} — slide preview`}
                     loading="lazy"
                     allowFullScreen
-                    className="block w-full aspect-video border-0"
+                    className="block w-xl aspect-video border-0"
                   />
                   <p className="px-4 py-2 text-xs text-tertiary">
                     If the preview is unavailable, open the slides using the title above.
                   </p>
-                </div>
+                </>
               ) : (
               <a
                 href={workshop.url}

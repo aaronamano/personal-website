@@ -3,7 +3,7 @@ import { pianoVideos } from '../data/piano';
 export default function Piano() {
   return (
     <>
-      <p className="mb-4"><b>Fun fact</b>: I've played piano for 8+ years. Here you can listen to my recordings by clicking on a title.</p>
+      <p className="mb-4"><b>Fun fact</b>: I've played piano for 8+ years. You can listen to my recordings below.</p>
       <div className="space-y-4">
         {[...pianoVideos].sort((a, b) => b.year - a.year).map((video, index) => (
           <div key={index}>

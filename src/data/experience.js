@@ -1,10 +1,10 @@
 export const experience = [
   {
-    title: "Engineer",
-    organization: "Michigan Aeronautical Student Association at UM-Dearborn",
-    dateRange: "Sep 2026 — Present",
-    location: "Dearborn, MI",
-    description: 'Dashboard team',
+    title: "Software Engineer Intern",
+    organization: "🥷🏼",
+    dateRange: "Oct 2026 — Present",
+    location: "Rochester Hills, MI",
+    description: '',
   },
   {
     title: "Technical Lead",
