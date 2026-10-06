@@ -14,13 +14,6 @@ export const experience = [
     description: 'Hosting workshops on Google AI Skills',
   },
   {
-    title: "Fullstack Developer",
-    organization: "Hack Dearborn 5",
-    dateRange: "May 2026 — Sep 2026",
-    location: "Dearborn, MI",
-    description: 'Collaborated with a cross-functional team on implementing the Hack Dearborn 5 website and built an in-house registration form',
-  },
-  {
     title: "Backend Developer",
     organization: "Filipino Americans in Tech",
     dateRange: "Dec 2025 — May 2026",
